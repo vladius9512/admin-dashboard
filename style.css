@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: #E2E8F0;
 }
 #container {
     display: grid;
@@ -16,10 +16,11 @@ body {
 
 .header {
     grid-column: 2;
-    background-color: #e4e4e7;
+    background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 0px 7px 0px gray;
 }
 
 .search-bar {
@@ -34,6 +35,7 @@ body {
     border-style: none;
     width: 550px;
     height: 25px;
+    background-color: #E2E8F0;
 }
 
 .hello-profile {
@@ -118,6 +120,8 @@ body {
     grid-template-rows: 100px 1fr 3fr;
     background-color: #06b6d4;
     padding-left: 40px;
+    color: #f0f9ff;
+    font-weight: 700;
 }
 
 .page-name {
@@ -153,11 +157,108 @@ body {
 
 .main-board {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .projects {
     grid-column: 1;
     grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 50px repeat(3, minmax(200px,250px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 25px;
+    gap: 25px;
 }
 
+.projects h4 {
+    grid-column: 1/-1;
+    margin-top: 2.5rem;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: -15px;
+}
+
+.projects-item {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: 1fr 50px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.projects-item p{
+    color: #656565;
+}
+
+.text-block {
+    margin: 20px;
+}
+
+.text-block h5 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.text-block p {
+    font-size: 15px;
+}
+
+.item-border-color {
+    background-color: #F0B429;
+    grid-row: 1/3;
+    border-radius: 15px 0px 0px 15px;
+    border-style: none;
+}
+
+.item-footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-column: 2/3;
+    gap: 25px;
+    margin-right: 25px;
+}
+
+.item-footer img{
+    width: 25px;
+    height: 25px;
+}
+
+.updates {
+    display: grid;
+    grid-template-rows: 50px 250px;
+    gap: 25px;
+    padding-right: 1.5rem;
+}
+
+.updates h4 {
+    grid-row: 1/2;
+    font-size: 20px;
+    margin-top: 2.5rem;
+    margin-bottom: -15px;
+    font-weight: 100;
+}
+
+.updates-container {
+    display:grid;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.updates-line {
+    width: 100%;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.updates-item h5{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.updates-item p{
+    font-size: 14px;
+    color: #656565;
+}
